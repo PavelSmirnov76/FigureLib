@@ -5,10 +5,10 @@ create table dbo.Product
 )
 
 insert into dbo.Product(ProductId, ProductName) values
-	('1', 'Молоко'),
-	('2', 'Сыр'),
-	('3', 'Хлеб'),
-	('4', 'Телефон')
+	('1', 'РњРѕР»РѕРєРѕ'),
+	('2', 'РЎС‹СЂ'),
+	('3', 'РҐР»РµР±'),
+	('4', 'РўРµР»РµС„РѕРЅ')
 
 create table dbo.Category
 (
@@ -17,9 +17,9 @@ create table dbo.Category
 )
 
 insert into dbo.Category(CategoryId, CategoryName) values
-	('1', 'Молочные продукты'),
-	('2', 'Выпечка'),
-	('3', 'Напитки')
+	('1', 'РњРѕР»РѕС‡РЅС‹Рµ РїСЂРѕРґСѓРєС‚С‹'),
+	('2', 'Р’С‹РїРµС‡РєР°'),
+	('3', 'РќР°РїРёС‚РєРё')
 
 create table dbo.ProductsCategories
 (
