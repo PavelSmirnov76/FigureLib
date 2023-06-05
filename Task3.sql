@@ -32,7 +32,9 @@ insert into dbo.ProductsCategories(ProductId, CategoryId) values (1, 1)
 insert into dbo.ProductsCategories(ProductId, CategoryId) values (2, 1)
 insert into dbo.ProductsCategories(ProductId, CategoryId) values (3, 2)
 
+
+--Вывод всех пар продукт-категория. Даже если у продукта нет категории.
 select P.ProductName, C.CategoryName
-from ProductsCategories as PC 
-full join Category as C ON C.CategoryId = PC.CategoryId
-full join Product as P ON P.ProductId = PC.ProductId
+from Product as P 
+left join ProductsCategories as PC ON P.ProductId = PC.ProductId
+left join Category as C ON C.CategoryId = PC.CategoryId
